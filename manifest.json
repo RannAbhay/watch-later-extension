@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Watch Later Extension",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "activeTab",
+    "runtime"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
